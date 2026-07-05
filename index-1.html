@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>For My Jaanu ❤️</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);color:#fff;overflow-x:hidden}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+h1{font-size:3em;color:#ff7eb3}button{padding:12px 24px;border:none;border-radius:30px;background:#ff4f81;color:#fff;font-size:18px}
+section{padding:40px;max-width:800px;margin:auto}.card{background:rgba(255,255,255,.08);padding:25px;border-radius:18px}
+.heart{position:fixed;top:-20px;color:#ff6b9d;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh)}}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.ph{height:140px;border:2px dashed #ff9ac2;display:flex;align-items:center;justify-content:center;border-radius:12px}
+footer{text-align:center;padding:30px;color:#ddd}
+</style></head>
+<body>
+<div class='hero'>
+<h2>To My Beautiful</h2><h1>Jaanu 😘</h1>
+<p>Every heartbeat whispers your name. You are my smile, my peace, my happiness.</p>
+<button onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">Open My Heart 💌</button>
+</div>
+<section id='letter'><div class='card'>
+<h2>💌 A Letter</h2>
+<p>My Dearest Jaanu,<br><br>
+No matter what happens, I'll always care for you, respect you and support you.
+You are the most beautiful part of my life. Thank you for being you.<br><br>
+Forever Yours,<br><b>Your Love ❤️</b></p>
+</div></section>
+<section><div class='card'><h2>📸 Our Memories</h2><div class='gallery'>
+<div class='ph'>Add Photo 1</div><div class='ph'>Add Photo 2</div>
+<div class='ph'>Add Photo 3</div><div class='ph'>Add Photo 4</div>
+</div></div></section>
+<section style='text-align:center'>
+<button onclick="alert('I Love You Forever, Jaanu ❤️🌹')">🎁 Surprise</button>
+</section>
+<footer>Made with ❤️ by Your Love</footer>
+<script>
+setInterval(()=>{
+ let h=document.createElement('div');
+ h.className='heart';h.innerHTML='❤️';
+ h.style.left=Math.random()*100+'vw';
+ h.style.animationDuration=(3+Math.random()*4)+'s';
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),7000);
+},250);
+</script>
+</body></html>
